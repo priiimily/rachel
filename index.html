@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+
+	<title>A TRIBUTE FOR MY FAMILY</title>
+</head>
+<body>
+
+<button style="font-size: 40px;" onclick="myFunction()"><i class='fas fa-moon'></i></button>
+
+
+  <div class="text">
+<h1> A TRIBUTE FOR MY FAMILY </h1> <br>
+<h3>This family ain’t complete without me :P</h3>
+<br>
+<h2>Love these people to the moon and back!<br>
+  <h5>-RACHEL SALUDARIO</h5></h2>
+
+</div>
+
+<div class="full-img" id="fullImgBox">
+  <img src="images/img1.jpeg" id="fullImg">
+  <span onclick="closeFullImg()">x</span>
+</div>
+<div class="img-gallery">
+  <img src="images/img1.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img2.jpg"  onclick="openFullImg(this.src)">
+  <img src="images/img8.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img7.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img5.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img6.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img4.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img3.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img9.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img10.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img11.jpeg" onclick="openFullImg(this.src)">
+  <img src="images/img12.jpeg" onclick="openFullImg(this.src)">
+
+</div>
+
+<script>
+  var FullImgBox = document.getElementById("fullImgBox");
+  var FullImg = document.getElementById("fullImg");
+
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg(){
+    fullImgBox.style.display = "none";
+  }
+</script>
+
+
+
+<menu>
+  <a href="https://mail.google.com/mail/u/0/#inbox" class="action"><i class="fab fa-google"></i></a>
+  <a href="https://www.instagram.com/cheeeelsaludario/" class="action"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com/jaiiiqtie?s=09&fbclid=IwAR2PiUFoILsXdkXhNQnwXgt-T9d6eggweIZ8PUzhZVCxM8OzBVpIU7GQw1E" class="action"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.facebook.com/" class="action"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+</menu>
+ 
+ 
+
+<script>
+const trigger = document.querySelector("menu > .trigger");
+trigger.addEventListener('click', (e) => {
+  e.currentTarget.parentElement.classList.toggle("open");
+});
+
+</script>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+</body>
+</html>
